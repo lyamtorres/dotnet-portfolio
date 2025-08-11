@@ -32,6 +32,10 @@ import {
   Terminal,
   Cpu,
   ChevronRight,
+  GitBranchIcon,
+  SplinePointer,
+  LayoutTemplate,
+  BrainCircuit,
 } from "lucide-react";
 import {
   ResponsiveContainer,
@@ -80,19 +84,19 @@ const PROFILE = {
   location: "Nantes, France",
   summary:
     "Je conçois des applications Web performantes et scalables avec .NET, React et GitHub. J'aime transformer des idées en produits robustes et élégants.",
-  avatar: "/portrait.jpg", // remplacez par votre image
+  avatar: "portrait.jpeg",
   email: "lyamtorres@hotmail.com",
-  github: "https://github.com/votre-github",
-  linkedin: "https://www.linkedin.com/in/votre-linkedin/",
+  github: "https://github.com/lyamtorres",
+  linkedin: "https://www.linkedin.com/in/lyamtorres/",
   cv: "/cv.pdf",
-  years: 3,
-  projectsCount: 1,
-  certifications: 1,
+  years: 4,
+  projectsCount: 0,
+  certifications: 0,
 };
 
 const PROJECTS = [
   {
-    title: "SaaS Facturation B2B",
+    title: "Dojang Platform",
     description:
       "Plateforme multi‑tenant de facturation électronique avec workflow d'approbation, export comptable et intégration SSO.",
     stack: ["ASP.NET Core", "EF Core", "PostgreSQL", "React", "Tailwind", "Azure"],
@@ -102,24 +106,17 @@ const PROJECTS = [
     },
   },
   {
-    title: "API Catalogues & Pricing",
+    title: "AI Chatbot",
     description:
       "Microservices CQRS/DDD pour la tarification dynamique, bus d'événements, et cache distribué.",
     stack: [".NET 8", "MediatR", "Redis", "RabbitMQ", "Docker", "Kubernetes"],
     links: { repo: "https://github.com/", live: "#" },
   },
   {
-    title: "Monitoring Temps Réel",
+    title: "Sushiito Restaurant",
     description:
-      "Dashboard temps réel avec SignalR, agrégations, et alerting (webhooks/Teams).",
-    stack: ["SignalR", "TimescaleDB", "React", "Recharts", "Azure App Service"],
-    links: { repo: "https://github.com/", live: "#" },
-  },
-  {
-    title: "Portail Client Headless",
-    description:
-      "Portail headless e‑commerce, Next.js + API .NET, authentification OpenID Connect.",
-    stack: ["ASP.NET", "Next.js", "OIDC", "Azure AD", "Vercel"],
+      "Microservices CQRS/DDD pour la tarification dynamique, bus d'événements, et cache distribué.",
+    stack: [".NET 8", "MediatR", "Redis", "RabbitMQ", "Docker", "Kubernetes"],
     links: { repo: "https://github.com/", live: "#" },
   },
 ];
@@ -303,12 +300,12 @@ export default function DotNetPortfolio() {
                 <Separator className="my-6" />
                 <div className="grid grid-cols-2 gap-3">
                   {[
-                    { label: ".NET 8 / C#", Icon: Terminal },
+                    { label: ".NET 10 / C#", Icon: Terminal },
                     { label: "ASP.NET Core", Icon: Code2 },
-                    { label: "EF Core / SQL", Icon: Database },
-                    { label: "Azure / DevOps", Icon: Cloud },
-                    { label: "Docker / K8s", Icon: Boxes },
-                    { label: "React / TS", Icon: Cpu },
+                    { label: "React / TS", Icon: LayoutTemplate },
+                    { label: "Figma", Icon: SplinePointer },
+                    { label: "GitHub / Git", Icon: GitBranchIcon },
+                    { label: "GPT-5", Icon: BrainCircuit },
                   ].map(({ label, Icon }) => (
                     <div key={label} className="flex items-center gap-2 rounded-xl border p-2 text-sm">
                       <Icon className="h-4 w-4 text-primary"/>
